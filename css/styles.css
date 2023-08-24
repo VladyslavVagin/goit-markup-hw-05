@@ -89,7 +89,6 @@ img {
   display: flex;
   align-items: center;
   gap: 40px;
-  margin-right: 332px;
 }
 .nav-link {
   color: #2e2f42;
@@ -121,6 +120,13 @@ img {
 }
 
 /* Contacts  */
+.address-cont {
+  width: 100%;
+  max-width: 700px;
+  display: flex;
+  justify-content: flex-end;
+}
+
 .address-list {
   list-style: none;
   font-style: normal;
@@ -443,6 +449,7 @@ label {
 }
 
 .ourteam-list-card {
+  width: calc((100% - 24 * 3) / 4);
   border-radius: 0px 0px 4px 4px;
   background-color: #fff;
   box-shadow: 0px 2px 1px 0px rgba(46, 47, 66, 0.08),
