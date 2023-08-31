@@ -200,7 +200,7 @@ img {
 }
 .close-icon {
   fill: var(--titles-color);
-  transition-property: fill;
+  transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .close-btn:hover .close-icon,
 .close-btn:focus .close-icon {
@@ -212,7 +212,7 @@ img {
   padding: 8px;
   border-style: none;
   background-color: #e7e9fc;
-  transition-property: background-color;
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
   display: flex;
   margin-bottom: 24px;
 }
@@ -241,18 +241,20 @@ label {
   border: 1px solid rgba(46, 47, 66, 0.4);
   position: relative;
   outline: none;
-  transition-property: border-color;
+  transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .form-input {
   resize: none;
   height: 120px;
   padding: 8px 16px;
+  transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .input-area {
   height: 40px;
   text-indent: 35px;
+  transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .form-input:focus-within,
 .input-area:focus-within {
@@ -331,7 +333,9 @@ label {
   vertical-align: sub;
   margin-right: 5px;
   background-color: var(--white-background-color);
-  transition: background-color 150ms ease-in-out;
+  transition-property: background-color, border;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
   cursor: pointer;
 }
 .checkbox-container:focus-within .checkbox-custom {
@@ -358,7 +362,7 @@ label {
   fill: rgba(46, 47, 66, 1);
   position: absolute;
   margin: 11px 0 11px 16px;
-  transition-property: fill;
+  transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .input-wrap:focus-within .svg-form {
   fill: rgba(77, 90, 229, 1);
