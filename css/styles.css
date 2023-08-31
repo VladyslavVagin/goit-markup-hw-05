@@ -354,12 +354,14 @@ label {
   align-items: center;
   justify-content: center;
   fill: transparent;
+  position: relative;
 }
 .checkbox-container {
   margin-bottom: 24px;
+  position: relative;
 }
 
-.checkbox-real:checked .checkbox-custom {
+.checkbox-real:checked + .label-checkbox .checkbox-custom {
   background-color: #4d5ae5;
   border: none;
   fill: #f4f4fd;
@@ -430,7 +432,7 @@ label {
   border: 1px solid var(--lightslate, #8e8f99);
 }
 
-.visualy-hidden {
+.visually-hidden {
   overflow: hidden;
   position: absolute;
   width: 1px;
