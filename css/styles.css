@@ -670,6 +670,7 @@ label {
 
 .input-btn-block {
   display: flex;
+  gap: 24px;
   justify-content: center;
 }
 
@@ -679,7 +680,11 @@ label {
   color: var(--white-background-color);
   font-family: inherit;
   outline: none;
-  background-color: var(--titles-color);
+  background-color: transparent;
+  font-size: 12px;
+  line-height: 1.5;
+  letter-spacing: 0.04em;
+  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
   border-radius: 4px;
   border: 1px solid var(--white-background-color);
   box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.15);
@@ -700,11 +705,20 @@ label {
 }
 
 .subscribe-button {
+  font-family: "Roboto", sans-serif;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 1.5;
+  letter-spacing: 0.04em;
+  color: #fff;
+  cursor: pointer;
+  min-width: 165px;
   height: 40px;
   background-color: var(--socialmain-color);
   padding: 8px 24px;
-  margin-left: 24px;
-  display: inline-flex;
+  border: none;
+  display: flex;
+  border-radius: 4px;
   align-items: center;
   justify-content: center;
   transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
