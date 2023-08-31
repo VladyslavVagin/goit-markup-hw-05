@@ -362,7 +362,7 @@ label {
 }
 
 .checkbox-real:checked + .label-checkbox .checkbox-custom {
-  background-color: #4d5ae5;
+  background-color: #404bbf;
   border: none;
   fill: #f4f4fd;
 }
