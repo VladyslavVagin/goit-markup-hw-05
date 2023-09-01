@@ -305,16 +305,12 @@ label {
 }
 
 .backdrop {
-  display: flex;
-  justify-content: center;
   background-color: rgba(46, 47, 66, 0.4);
   position: fixed;
   width: 100%;
   height: 100%;
   left: 0;
-  right: 0;
   top: 0;
-  bottom: 0;
   z-index: 1;
   cursor: not-allowed;
   transform: scale(1);
@@ -326,8 +322,6 @@ label {
   visibility: hidden;
   opacity: 0;
   pointer-events: none;
-  transform: translateX(-50%) translateY(-50%) scale(0) rotate(0deg)
-    skew(40deg 40deg);
 }
 
 .checkbox-real {
@@ -354,9 +348,11 @@ label {
   align-items: center;
   justify-content: center;
   fill: transparent;
+  position: relative;
 }
 .checkbox-container {
   margin-bottom: 24px;
+  position: relative;
 }
 
 .checkbox-real:checked + .label-checkbox .checkbox-custom {
@@ -377,6 +373,8 @@ label {
 
 .input-wrap {
   position: relative;
+  display: flex;
+  align-items: center;
 }
 
 .svg-form {
